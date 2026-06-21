@@ -7,6 +7,8 @@
 .admin-body { background: var(--cream-deep); min-height: 100vh; }
 
 /* ===================== LOGIN ===================== */
+.login-screen[hidden] { display: none; }
+
 .login-screen {
   min-height: 100vh;
   display: flex;
