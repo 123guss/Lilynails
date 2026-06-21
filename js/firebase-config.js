@@ -25,8 +25,8 @@ const WHATSAPP_NUMBER = "50247008811";
 // CONFIGURACIÓN DE CLOUDINARY — para guardar las fotos (gratis,
 // sin necesidad de tarjeta de crédito)
 // ============================================================
-const CLOUDINARY_CLOUD_NAME = "TU_CLOUD_NAME_AQUI";
-const CLOUDINARY_UPLOAD_PRESET = "TU_UPLOAD_PRESET_AQUI";
+const CLOUDINARY_CLOUD_NAME = "dqxmqkbzm";
+const CLOUDINARY_UPLOAD_PRESET = "ml_default2";
 
 // Inicializa Firebase (no tocar)
 firebase.initializeApp(firebaseConfig);
