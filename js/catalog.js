@@ -1,7 +1,4 @@
-// ============================================================
-// LILY NAILS — Lógica del catálogo público
-// Lee los diseños desde Firestore y los pinta en pantalla.
-// ============================================================
+// LEE LOS DISEÑOS DEL FIRE
 
 const grid = document.getElementById('catalog-grid');
 const emptyState = document.getElementById('empty-state');
@@ -11,7 +8,7 @@ const catScroll = document.getElementById('cat-scroll');
 let allDesigns = [];
 let activeCategory = 'todos';
 
-// --- Setear los links de WhatsApp del header / footer ---
+// -LINKS DEL FOOTER Y DEL HEADER
 function buildWhatsAppLink(message) {
   const text = encodeURIComponent(message || 'Hola! Vi su catálogo y me gustaría más información 🌸');
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
@@ -20,7 +17,7 @@ function buildWhatsAppLink(message) {
 document.getElementById('header-whatsapp').href = buildWhatsAppLink();
 document.getElementById('footer-whatsapp').href = buildWhatsAppLink();
 
-// --- Cargar diseños desde Firestore ---
+// -DISEÑOS DEL FIRESTORE
 function loadDesigns() {
   db.collection('designs')
     .orderBy('createdAt', 'desc')
@@ -41,11 +38,11 @@ function loadDesigns() {
     );
 }
 
-// --- Generar pills de categorías dinámicamente según lo publicado ---
+// -Generar pills
 function renderCategories() {
   const cats = [...new Set(allDesigns.map(d => d.category).filter(Boolean))];
 
-  // Limpia todo excepto el botón "Todos"
+  // Limpia todo excepto el boton de "Todos"
   catScroll.querySelectorAll('.cat-pill:not([data-cat="todos"])').forEach(el => el.remove());
 
   cats.forEach(cat => {
@@ -66,7 +63,7 @@ function renderCategories() {
   });
 }
 
-// --- Pintar las tarjetas del catálogo ---
+// -Pintar las tarjetas del catalogo
 function renderGrid() {
   const filtered = activeCategory === 'todos'
     ? allDesigns
@@ -105,7 +102,7 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-// --- Modal de detalle ---
+// -Modal de detalle
 const modalOverlay = document.getElementById('modal-overlay');
 const modalImg = document.getElementById('modal-img');
 const modalCat = document.getElementById('modal-cat');
@@ -140,5 +137,5 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
 
-// --- Iniciar ---
+// -Y por fin el boton inicar va vos
 loadDesigns();
