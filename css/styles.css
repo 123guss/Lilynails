@@ -1,10 +1,5 @@
-/* ===================================================================
-   LILY NAILS — Design tokens
-   Color: crema rosado de fondo, dorado como acento de marca,
-   cacao para texto (cálido, no negro puro), rosa polvo para detalles.
-   Type: Fraunces (display, con itálica para momentos especiales)
-         + Manrope (texto/UI, limpia y legible en celular)
-=================================================================== */
+/* Aca va el diseño de fichas y ah pa que explicar, el estilo pues
+el el, diseño asi todo simple pero poco a poco hombre, tu sabe*/
 
 :root {
   --cream:        #FDF6F1;
@@ -58,7 +53,7 @@ img { display: block; max-width: 100%; }
   }
 }
 
-/* ===================== HEADER ===================== */
+/* EL HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -107,7 +102,7 @@ img { display: block; max-width: 100%; }
 }
 .header-cta:hover { background: var(--ink); transform: translateY(-1px); }
 
-/* ===================== HERO ===================== */
+/* EL AMADO Y QUERIDO Y MUY USADO HERO */
 .hero {
   position: relative;
   padding: 64px 20px 56px;
@@ -185,7 +180,7 @@ img { display: block; max-width: 100%; }
   50% { transform: translateY(3px); }
 }
 
-/* ===================== CATEGORY NAV ===================== */
+/* EL .CAT NAV */
 .cat-nav {
   position: sticky;
   top: 57px;
@@ -227,7 +222,7 @@ img { display: block; max-width: 100%; }
   border-color: var(--cacao);
 }
 
-/* ===================== CATALOG GRID ===================== */
+/* El Grid del catalogo */
 .catalog-wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -284,7 +279,7 @@ img { display: block; max-width: 100%; }
 }
 .nail-card:hover .nail-card-img img { transform: scale(1.06); }
 
-/* signature drip accent */
+/* el drip */
 .nail-card-img::after {
   content: '';
   position: absolute;
@@ -326,7 +321,7 @@ img { display: block; max-width: 100%; }
   margin: 0;
 }
 
-/* ===================== EMPTY / LOADING ===================== */
+/* La carga */
 .empty-state, .loading-state {
   text-align: center;
   padding: 60px 20px;
@@ -350,7 +345,7 @@ img { display: block; max-width: 100%; }
   50% { opacity: 1; transform: rotate(45deg) scale(1.05); }
 }
 
-/* ===================== MODAL ===================== */
+/* MODAL */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -460,7 +455,7 @@ img { display: block; max-width: 100%; }
 }
 .modal-whatsapp:hover { transform: translateY(-2px); }
 
-/* ===================== FOOTER ===================== */
+/* EL .FOOTER */
 .site-footer {
   background: var(--cacao);
   color: var(--cream);
