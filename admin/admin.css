@@ -1,12 +1,10 @@
-/* ===================================================================
-   LILY NAILS — Admin panel styles
-   Mismo sistema visual que el catálogo, pero con foco en
-   usabilidad simple: botones grandes, pasos claros, sin ambigüedad.
-=================================================================== */
+/*a.1 y oliis si miras aca es porque estas bien interesado va, jajaja, y si, esta apoyado con ayuda de ia con 
+claude chatgpt y mis conocimientos de 5 lenguajes de progra uno de ellos es c++ envidiooo jaja,
+por si las dudaaas contactame al +50240346691 en whats*/
 
 .admin-body { background: var(--cream-deep); min-height: 100vh; }
 
-/* ===================== LOGIN ===================== */
+/*a.2 */
 .login-screen[hidden] { display: none; }
 
 .login-screen {
@@ -81,7 +79,7 @@
   margin-top: 16px;
 }
 
-/* ===================== ADMIN HEADER ===================== */
+/*a.2 */
 .admin-header {
   background: var(--white);
   border-bottom: 1px solid rgba(62, 42, 34, 0.08);
@@ -116,7 +114,7 @@
 }
 .admin-logout:hover { background: var(--cream); }
 
-/* ===================== ADMIN MAIN ===================== */
+/*a.3 */
 .admin-main {
   max-width: 720px;
   margin: 0 auto;
@@ -140,7 +138,7 @@
   margin: 0 0 18px;
 }
 
-/* ===================== UPLOAD FORM ===================== */
+/*a.4 */
 .upload-form {
   display: flex;
   flex-direction: column;
@@ -235,7 +233,7 @@
 .upload-status.success { color: #4D8C5C; }
 .upload-status.error { color: #B5453F; }
 
-/* ===================== ADMIN GRID (existing designs) ===================== */
+/*a.5 */
 .admin-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -298,7 +296,7 @@
   padding: 20px 0;
 }
 
-/* ===================== CONFIRM DELETE MODAL ===================== */
+/*a.6 */
 .confirm-overlay {
   position: fixed;
   inset: 0;
