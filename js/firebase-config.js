@@ -10,7 +10,7 @@
 // ============================================================
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBJVkYi9OUt7PxR9D12RdGqYXdLYjM91yY",
+  apiKey: "AIzaSyBJVkYi9OUt7PxR9D12RdGqYXdlYjM91yY",
   authDomain: "lily-nails-222d1.firebaseapp.com",
   projectId: "lily-nails-222d1",
   storageBucket: "lily-nails-222d1.firebasestorage.app",
