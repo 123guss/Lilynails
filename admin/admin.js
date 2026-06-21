@@ -1,8 +1,6 @@
-// ============================================================
-// LILY NAILS — Lógica del panel de administración
-// Login con Firebase Auth + subir fotos a Storage +
-// guardar datos en Firestore + listar/eliminar diseños.
-// ============================================================
+// LILY NAILS aca va la logica del panel va
+// Login con Firebase Auth + subir fotos a Storage gratuito no comprao JAJAJ 
+// Aca guardamos datos en Firestore + listar los seños, orale?.
 
 const auth = firebase.auth();
 
@@ -11,7 +9,7 @@ const adminPanel = document.getElementById('admin-panel');
 const loginForm = document.getElementById('login-form');
 const loginError = document.getElementById('login-error');
 
-// --- Manejo de sesión ---
+//  Manejo de sesion sensilliiito mijo, asi con pura fomula de excel JAJA (a ver si cachaste el chiste)
 auth.onAuthStateChanged((user) => {
   if (user) {
     loginScreen.hidden = true;
@@ -41,7 +39,7 @@ document.getElementById('logout-btn').addEventListener('click', () => {
   auth.signOut();
 });
 
-// --- Categoría: mostrar campo nuevo si elige "crear categoría" ---
+//Categoria >>> mostrar campo nuevo si elige mi ama a "crear categoría"
 const categorySelect = document.getElementById('design-category');
 const categoryNewInput = document.getElementById('design-category-new');
 
@@ -56,7 +54,7 @@ categorySelect.addEventListener('change', () => {
   }
 });
 
-// --- Preview de imagen al elegir archivo ---
+// Preview de imagen pa elegir archivo
 const imageInput = document.getElementById('image-input');
 const uploadDropEmpty = document.getElementById('upload-drop-empty');
 const uploadPreview = document.getElementById('upload-preview');
@@ -75,7 +73,7 @@ imageInput.addEventListener('change', () => {
   reader.readAsDataURL(file);
 });
 
-// --- Publicar nuevo diseño ---
+// Aca Publicar nuevo diseño
 const uploadForm = document.getElementById('upload-form');
 const publishBtn = document.getElementById('publish-btn');
 const uploadStatus = document.getElementById('upload-status');
@@ -105,10 +103,10 @@ uploadForm.addEventListener('submit', async (e) => {
   showStatus('Subiendo foto…', 'loading');
 
   try {
-    // 1. Subir imagen a Cloudinary
+    // Subir imagen a Cloudinary (no use firebase porque ahora se paga, antes no :<)
     const imageUrl = await uploadToCloudinary(selectedFile);
 
-    // 2. Guardar datos en Firestore
+    // Guardar datos en Firestore
     await db.collection('designs').add({
       name,
       price: Number(price),
@@ -132,7 +130,7 @@ uploadForm.addEventListener('submit', async (e) => {
   }
 });
 
-// --- Sube una imagen a Cloudinary y devuelve la URL pública ---
+// Sube una imagen a Cloudinary y devuelve la URL publishh
 async function uploadToCloudinary(file) {
   const formData = new FormData();
   formData.append('file', file);
@@ -157,7 +155,7 @@ function showStatus(msg, type) {
   uploadStatus.className = `upload-status ${type === 'loading' ? '' : type}`;
 }
 
-// --- Listar diseños existentes en el panel ---
+// Listar diseños existentes en el panel orignal o existente cmo querras
 const adminGrid = document.getElementById('admin-grid');
 const adminEmpty = document.getElementById('admin-empty');
 
@@ -195,7 +193,7 @@ function loadAdminDesigns() {
     });
 }
 
-// --- Eliminar diseño (con confirmación) ---
+// Eliminar diseño (con confirmacioon claro)
 const confirmOverlay = document.getElementById('confirm-overlay');
 let pendingDeleteId = null;
 
