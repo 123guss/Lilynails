@@ -116,7 +116,7 @@ uploadForm.addEventListener('submit', async (e) => {
       createdAt: firebase.firestore.FieldValue.serverTimestamp()
     });
 
-    showStatus('¡Publicado! Ya aparece en tu catálogo ✨', 'success');
+    showStatus('Publicado! Ya aparece en tu catálogo mamii, te amoo, bien echo', 'success');
     uploadForm.reset();
     uploadPreview.hidden = true;
     uploadDropEmpty.hidden = false;
