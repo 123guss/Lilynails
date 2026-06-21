@@ -119,7 +119,7 @@ function openModal(design) {
   modalPrice.textContent = `Q${design.price}`;
   modalDesc.textContent = design.description || '';
   modalDesc.hidden = !design.description;
-  modalWhatsapp.href = buildWhatsAppLink(`Hola! Me interesa este diseño: ${design.name} (Q${design.price}) 🌸`);
+  modalWhatsapp.href = buildWhatsAppLink(`Hola! Me interesa este diseño: ${design.name} (Q${design.price}) `);
   modalOverlay.classList.add('is-open');
   document.body.style.overflow = 'hidden';
 }
