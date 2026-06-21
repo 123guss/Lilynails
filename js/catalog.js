@@ -10,7 +10,7 @@ let activeCategory = 'todos';
 
 // -LINKS DEL FOOTER Y DEL HEADER
 function buildWhatsAppLink(message) {
-  const text = encodeURIComponent(message || 'Hola! Vi su catálogo y me gustaría más información 🌸');
+  const text = encodeURIComponent(message || 'Hola! Vi su catálogo y me gustaría más información ');
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
 
